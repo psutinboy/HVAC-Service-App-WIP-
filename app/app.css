@@ -8,3 +8,30 @@
 Button.-primary {
   font-size: 18;
 }
+
+.hamburger-icon {
+  width: 24px;
+  height: 24px;
+  margin: 16px;
+}
+
+.side-menu {
+  background-color: white;
+  width: 250px;
+  height: 100%;
+  padding: 16px;
+  border-right-width: 1px;
+  border-right-color: #cccccc;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-content {
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  z-index: 0;
+}

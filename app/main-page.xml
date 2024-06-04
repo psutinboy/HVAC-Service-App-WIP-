@@ -1,8 +1,18 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
-    <ActionBar title="My App" icon="" />
-    <StackLayout class="p-4">
-        <Label text="Please tap me" class="text-3xl text-center" />
-        <Button text="TAP" tap="{{ onTap }}" class="-primary" />
-        <Label text="{{ message }}" class="text-lg text-center text-gray-400" textWrap="true" />
-    </StackLayout>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+    <GridLayout rows="auto, *" columns="auto, *">
+        <!-- Hamburger Menu Icon -->
+        <Image src="~/hamburger.png" row="0" col="0" class="hamburger-icon" />
+
+        <!-- Side Menu -->
+        <StackLayout rowSpan="2" colSpan="1" class="side-menu">
+            <Label text="Menu Item 1" />
+            <Label text="Menu Item 2" />
+            <Label text="Menu Item 3" />
+        </StackLayout>
+
+        <!-- Main Content -->
+        <StackLayout row="1" col="1" class="p-4 main-content">
+            <Label text="Welcome Back!" class="text-3xl text-center" />
+        </StackLayout>
+    </GridLayout>
 </Page>
